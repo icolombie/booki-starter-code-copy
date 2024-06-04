@@ -120,6 +120,41 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/*style ajouté au fichier original*/
+/*header*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 62px;
+    height: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    margin-right: 0;
+    padding: 20px;
+    font-size: 14px;
+}
+    a:hover {
+    color:#0065FC;
+    border-top: solid #0065FC;
+    padding-top: 20px;
+}
+           
+
+
+
+
+
+
+
+
 
 
 
