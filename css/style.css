@@ -232,9 +232,35 @@ button {
     height: 20px;
     margin-top: 30px;
 }
-
-
-
+/*Hebergements**/
+.hebergements h2 {
+    margin-bottom: 30px;
+}
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.hebergements-cards .card {
+    width: 230px;
+    height: 190px;
+    margin-right: 10px;
+}
+.hebergements-cards img {
+    width: 228px;
+    height: 100px;
+    border-radius: 20px;
+}
+.hebergements-cards .card-title {
+    margin-bottom: 4px;
+}
+.hebergements-cards .card-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 
 
