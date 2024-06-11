@@ -256,6 +256,7 @@ button {
     width: 240px;
     height: 207px;
     margin-right: 10px;
+    margin-bottom: 20px;
     padding-left: 5px;
 }
 .hebergements-cards img {
@@ -277,11 +278,42 @@ button {
     gap: 8px;
 }
 .affiche {
-   padding-top: 35px;
+   padding-top: 25px;
    font-size: 18px;
    font-weight: bold;
 }
-
+/*style d'Activités à Marseille*/
+.activites {
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+.activites h2 {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+.activites-cards .card {
+    width: 297px;
+    height: 439px;
+    padding: 0;
+}
+.activites-cards img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+.activites-cards {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+.activites-cards .card-title {
+    margin-left: 20px;
+}  
 
 
 
