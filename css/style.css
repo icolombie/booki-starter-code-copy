@@ -182,7 +182,7 @@ form {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-button {
+.texte {
     height: 49px;
     width: 132px;
     border-radius: 0 10px 10px 0;
@@ -191,6 +191,17 @@ button {
     color:#F2F2F2;
     font-weight: bold;
     font-size: 17px;
+}
+.loupe {
+    height: 49px;
+    width: 49px;
+    border-radius: 0 10px 10px 0;
+    border: solid 1px #F2F2F2;
+    background-color: #0065FC;
+    color:#F2F2F2;
+    font-weight: bold;
+    font-size: 17px;
+    visibility: hidden;;
 }
 .bar-titre {
     font-size: 18px;
@@ -252,28 +263,32 @@ button {
 .hebergements h2 {
     margin-bottom: 30px;
 }
+.hebergements-cards a {
+    width: 30%;
+    
+}
 .hebergements-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .hebergements-cards .card {
-    grid-row: 1 2;
-    width: 93%;
+    width: 100%;
     height: 207px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-}
+   display: flex;
+   flex-direction: column;
+}  
+
 .hebergements-cards img {
     width: 100%;
     height: 120px;
     border-radius: 20px 20px 0 0;
 }
+
 .hebergements-cards .card-title {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -283,9 +298,10 @@ button {
     margin-bottom: 0;
 }
 .hebergements-cards .card-content {
+    height: 64px;
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left: 10px;
     gap: 8px;
 }
 .affiche {
@@ -294,40 +310,52 @@ button {
 }
 /*Activités à Marseille*/
 .activites {
-    margin-top: 50px;
-    margin-left: 20px;
-    
+   width: 98%;
+   margin-left: 10px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.activites-cards a {
+    width: 23%;
 }
 .activites h2 {
     margin-bottom: 30px;
     margin-left: 20px;
-    
+    padding-bottom: 10px;
 }
 .activites-cards .card {
     width: 100%;
     height: 100%;
     padding: 0;
-    box-shadow: 0px 3px 15px 0px #0000001A;
+   
 }
 .activites-cards img {
     width: 100%;
     height: 85%;
     border-radius: 20px 20px 0 0;
 }
+.activites-cards .card-content {
+    height: 15%;
+}
+
 .activites-cards {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 439px;
-    column-gap: 20px;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 10px;
 }
 .activites-cards .card-title {
     margin-left: 20px;
 }  
+.activites-cards .card-txt {
+    height: 100%;
+    vertical-align: middle;
+}
+
 /*Footer*/
 footer {
-    width: 1340px;
+    width: 100%;
     height: 163px;
     background-color: #F2F2F2;
     margin-top: 50px;
@@ -438,6 +466,7 @@ form {
 }
 .activites-cards .card-content {
     height: 100px;
+    padding-top: 0;
 }
 .activites-cards h3 {
     font-size: 16px;
@@ -445,11 +474,61 @@ form {
 /*Footer*/
 footer {
     width: 100%;
-    margin-bottom: 30px;
-    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+.main-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*Header*/
+.container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.container img {
+    margin-bottom: 20px;
+}
+.container nav {
+    width: 100%;
+}
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Menu recherche*/
+.menu-recherche h2,p {
+    text-align: center;
+}
+.texte {
+    display: none;
+}
+.loupe {
+    visibility: visible;
+}
+form {
+    margin-left: 20px;
+}
+.filtres {
+    width: 350px;
+    height: 161px;
+    margin-right: 0;
+}
+.liste-filtres {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
 }
